@@ -84,6 +84,16 @@ public  class ComputerRepairRequest implements Identifiable<Integer>, Serializab
         this.problemDescription = problemDescription;
     }
 
+    @Override
+    public void setId(Integer id) {
+        this.ID = id;
+    }
+
+    @Override
+    public Integer getId() {
+        return ID;
+    }
+
     public Integer getID(){
         return ID;
     }
